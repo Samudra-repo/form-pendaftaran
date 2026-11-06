@@ -1,0 +1,44 @@
+body {
+  max-width: 600px;
+  /* width: 100%; */
+  margin: 0px auto;
+}
+.header {
+  text-align: center;
+}
+
+.navbar{
+  text-align: center;
+}
+
+.artikel{
+  padding: 10px;
+}
+
+.formulir{
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+}
+
+.kejuruan{
+  width: 100%;
+  padding: 10px;
+}
+
+.tabel{
+  text-transform: capitalize;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 786px) {
+  .body{
+    flex-direction: column;
+  }
+  
+}

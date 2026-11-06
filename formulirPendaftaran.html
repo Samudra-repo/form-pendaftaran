@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <center>
+        <!-- Navbar -->
+        <nav>
+          <a href="formulirPendaftaran.html">Formulir Pendaftaran </a> |
+          <a href="tabelPeserta.html"> Tabel Peserta </a> |
+          <a href="index.html">Beranda</a>
+        </nav>
+      </center>
+      <hr />
+    </header>
+
+    <!-- Content -->
+    <main>
+      <center>
+        <h1>Formulir Pendaftaran</h1>
+      </center>
+      <form action="tabelPeserta.html" method="post">
+        <div class="formulir">
+        <!-- PENDAFTARAN -->
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <!-- NAMA -->
+            <label for="nama">Nama :</label><br />
+            <input
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Masukkan Nama"
+            required
+            />
+            <br /><br />
+            
+            <!-- JENIS KELAMIN -->
+          <label for="form-label">Jenis Kelamin :</label>
+          <br />
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            value="Laki-Laki"
+          />Laki-Laki
+          <input type="radio" name="gender" id="gender" value="Wanita" />Wanita
+          <br /><br />
+
+          <!-- Pilih agama -->
+          <label for="agama">Agama :</label>
+          <br />
+          <select name="agama" id="agama" required>
+            <optgroup label="Agama Mayoritas">
+              <option value="islam">Islam</option>
+              <option value="kristen">Kristen</option>
+              <option value="katolik">Katolik</option>
+            </optgroup>
+            <optgroup label="Agama Lain">
+              <option value="hindu">Hindu</option>
+              <option value="budha">Budha</option>
+            </optgroup>
+          </select>
+          <br /><br />
+
+          <!-- TEMPAT LAHIR -->
+          <label for="tempatLahir">Tempat Lahir :</label><br />
+          <input
+            type="text"
+            name="tempatLahir"
+            id="tempatLahir"
+            placeholder="Masukkan Tempat Lahir"
+            required
+          />
+          <br /><br />
+
+          <!-- TANGGAL LAHIR -->
+          <label for="tanggalLahir">Tanggal Lahir:</label>
+          <br />
+          <input type="date" id="tanggalLahir" name="tanggalLahir" />
+          <br /><br />
+
+          <!-- ALAMAT -->
+          <label for="alamat">Alamat :</label><br />
+          <textarea
+            name="alamat"
+            id="alamat"
+            rows="4"
+            cols="30"
+            placeholder="Masukkan Alamat"
+            required
+          ></textarea>
+          <br />
+        </fieldset>
+        <!-- PENDIDIKAN -->
+        <fieldset>
+          <legend>Pendidikan</legend>
+          <!-- SD -->
+          <label for="sd">SD :</label><br />
+          <input
+            type="text"
+            name="sd"
+            id="sd"
+            placeholder="Masukkan Nama SD"
+            required
+          />
+          <label for="masuk">Masuk</label>
+          <input type="date" id="masuk" name="masuk" />
+          <label for="Keluar">Keluar</label>
+          <br /><br />
+
+          <!-- SMP -->
+          <label for="smp">SMP :</label><br />
+          <input
+            type="text"
+            name="smp"
+            id="smp"
+            placeholder="Masukkan Nama SMP"
+            required
+          />
+          <label for="masuk">Masuk</label>
+          <input type="date" id="masuk" name="masuk" />
+          <label for="Keluar">Keluar</label>
+          <br /><br />
+
+          <!-- SMA -->
+          <label for="sma">SMA :</label><br />
+          <input
+            type="text"
+            name="sma"
+            id="sma"
+            placeholder="Masukkan Nama SMA"
+            required
+          />
+          <label for="masuk">Masuk</label>
+          <input type="date" id="masuk" name="masuk" />
+          <label for="Keluar">Keluar</label>
+          <br /><br />
+        </fieldset>
+
+        <!-- PELATIHAN -->
+        <fieldset>
+          <legend>Pelatihan</legend>
+          <!-- Minat -->
+          <label for="form-label">Minat :</label>
+          <br />
+          <input type="radio" name="gender" id="gender" value="html" />HTML
+          <input type="radio" name="gender" id="gender" value="css" />CSS
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            value="javascipt"
+          />Javascript
+          <input type="radio" name="gender" id="gender" value="php" />PHP
+          <br /><br />
+
+          <!-- Kompetensi -->
+          <label for="Kompetensi">Kompetensi :</label>
+          <br />
+          <input type="radio" name="gender" id="gender" value="html" />HTML
+          <input type="radio" name="gender" id="gender" value="css" />CSS
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            value="javascipt"
+          />Javascript
+          <input type="radio" name="gender" id="gender" value="php" />PHP
+          <br /><br />
+        </fieldset>
+
+        <!-- Pilih Jurusan -->
+        <fieldset>
+          <legend>Pilih Jurusan</legend>
+          <select name="jurusan" id="jurusan" required>
+            <optgroup label="Teknik">
+              <option value="informatika">Teknik Informatika</option>
+              <option value="elektro">Teknik Elektro</option>
+              <option value="industri">Teknik Industri</option>
+              <option value="Sipil">Teknik Sipil</option>
+            </optgroup>
+            <optgroup label="Ekonomi">
+              <option value="akuntansi">Akuntansi</option>
+              <option value="manajemen">Manajemen</option>
+              <option value="perbankan">Perbankan</option>
+              <option value="bisnisDigital">Bisnis Digital</option>
+            </optgroup>
+          </select>
+        </fieldset>
+      </div>
+        
+        <br /><br />
+        <!-- Tombol -->
+        <input type="submit" value="Submit" class="btn-submit" />
+        <input type="reset" value="Reset" class="btn-reset" />
+      </form>
+    
+    </main>
+  </body>
+</html>
